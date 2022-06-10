@@ -1,0 +1,46 @@
+.music_header {
+  display: flex;
+  min-height: 60px;
+  background-color: #ec4141;
+  width: 100%;
+  .music_search_area {
+    margin-left: 230px;
+    .music_circle {
+      background-color: #d93b3b;
+      color: #f6cece;
+      border: 0;
+    }
+    .music_input {
+      border-radius: 20px;
+      border: 0;
+      background-color: #d93b3b;
+      color: #f6cece;
+      input {
+        background-color: #d93b3b;
+      }
+      // 修改input字体颜色
+      input::-webkit-input-placeholder {
+        color: #ef9696;
+      }
+      input:-moz-placeholder {
+        color: #ef9696;
+      }
+      input::-moz-placeholder {
+        color: #ef9696;
+      }
+      input:-ms-input-placeholder {
+        color: #ef9696;
+      }
+    }
+  }
+  .music_user {
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    right: 50px;
+    a {
+      color: #fbd9d9;
+      font-size: 12px;
+    }
+  }
+}

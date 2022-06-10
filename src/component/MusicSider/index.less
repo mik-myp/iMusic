@@ -1,0 +1,33 @@
+.sider {
+  min-height: 200px;
+  .siderList {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-top: 10px;
+    .siderListTitle {
+      margin: 0 0 5px 15px;
+      padding-left: 5px;
+      font-size: 12px;
+      color: #999999;
+    }
+    .active {
+      font-weight: 700;
+      color: #333;
+      font-size: 17px;
+      background-color: #f6f6f7;
+    }
+    a {
+      height: 40px;
+      line-height: 40px;
+      padding-left: 5px;
+      margin: 1px 3px 1px 15px;
+      border-radius: 2px;
+      color: #333;
+      font-size: 15px;
+      &:hover {
+        background-color: #f6f6f7;
+      }
+    }
+  }
+}
