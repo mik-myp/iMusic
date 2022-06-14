@@ -6,6 +6,9 @@ export default defineConfig({
   },
   lessLoader: {},
   fastRefresh: {},
+  alias: {
+    '@': '/src',
+  },
   routes: [
     {
       path: '/',

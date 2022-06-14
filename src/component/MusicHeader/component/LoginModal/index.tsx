@@ -5,7 +5,7 @@ import {
   LoginGetKey,
   LoginGetImgByKey,
   LoginByCellphone,
-} from '../../../../api';
+} from '../../service/api';
 
 import './index.less';
 export default function LoginModal(props: any) {
@@ -17,11 +17,11 @@ export default function LoginModal(props: any) {
   const [loginForm] = Form.useForm();
   const getImg = async () => {
     await LoginGetKey({ timerstamp: Date.now() }).then((res) => {
-      setKey(res.data.unikey);
+      setKey(res.unikey);
     });
     await LoginGetImgByKey({ key, qrimg: true, timer: Date.now() }).then(
       (res) => {
-        setImgsrc(res.data.qrimg);
+        setImgsrc(res.qrimg);
       },
     );
   };
